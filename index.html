@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AIR BALANG TRIO RAMADOWN</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, sans-serif;
 color:white;
 background:#0b0b0b;
 overflow-x:hidden;
 }
 
-/* moving ramadhan gradient background */
+/* moving ramadhan background */
 
 body::before{
 content:"";
@@ -23,11 +25,11 @@ position:fixed;
 width:200%;
 height:200%;
 background:linear-gradient(45deg,#0f2027,#203a43,#2c5364,#0f2027);
-animation:movebg 20s linear infinite;
+animation:bgmove 20s linear infinite;
 z-index:-1;
 }
 
-@keyframes movebg{
+@keyframes bgmove{
 0%{transform:translate(0,0);}
 50%{transform:translate(-25%,-25%);}
 100%{transform:translate(0,0);}
@@ -37,17 +39,19 @@ z-index:-1;
 
 header{
 text-align:center;
-padding:50px 20px;
+padding:60px 20px;
 }
 
 header h1{
-font-size:40px;
+font-size:42px;
 color:#ffd700;
-text-shadow:0 0 10px #ffd700;
+text-shadow:0 0 15px #ffd700;
+margin-bottom:10px;
 }
 
 header p{
 color:#90ee90;
+font-size:18px;
 }
 
 /* menu */
@@ -56,14 +60,14 @@ color:#90ee90;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
-gap:20px;
+gap:25px;
 padding:30px;
 }
 
 .card{
 background:rgba(0,0,0,0.7);
 border:2px solid #ffd700;
-padding:20px;
+padding:25px;
 width:200px;
 border-radius:15px;
 text-align:center;
@@ -78,24 +82,59 @@ box-shadow:0 0 20px gold;
 .card h3{
 margin:0;
 color:#90ee90;
+font-size:22px;
 }
 
 .price{
-font-size:22px;
+font-size:24px;
 margin-top:10px;
 color:#ffd700;
 }
 
-/* whatsapp button */
+/* gallery */
+
+.gallery{
+text-align:center;
+padding:50px 20px;
+}
+
+.gallery h2{
+color:#ffd700;
+margin-bottom:30px;
+font-size:30px;
+}
+
+.gallery-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.gallery-container img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+border:2px solid gold;
+transition:0.3s;
+}
+
+.gallery-container img:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px gold;
+}
+
+/* order button */
 
 .order{
 text-align:center;
-margin:40px;
+margin:50px;
 }
 
 .btn{
 background:#25D366;
-padding:15px 30px;
+padding:16px 35px;
 color:white;
 text-decoration:none;
 border-radius:30px;
@@ -112,8 +151,9 @@ transform:scale(1.1);
 
 footer{
 text-align:center;
-padding:20px;
+padding:30px;
 color:#aaa;
+font-size:14px;
 }
 
 </style>
@@ -128,6 +168,7 @@ color:#aaa;
 <p>Ramadhan Special Drinks • Terengganu Style</p>
 
 </header>
+
 
 <section class="menu">
 
@@ -148,6 +189,23 @@ color:#aaa;
 
 </section>
 
+
+<section class="gallery">
+
+<h2>📸 Our Stall</h2>
+
+<div class="gallery-container">
+
+<img src="images/stall1.jpg">
+<img src="images/stall2.jpg">
+<img src="images/stall3.jpg">
+<img src="images/stall4.jpg">
+
+</div>
+
+</section>
+
+
 <div class="order">
 
 <a class="btn" href="https://wa.me/601131402035">
@@ -156,12 +214,14 @@ Order on WhatsApp
 
 </div>
 
+
 <footer>
 
 <p>📍 Kampong Baharu Balakong</p>
 <p>Selamat Berbuka Puasa 🌙</p>
 
 </footer>
+
 
 </body>
 </html>
