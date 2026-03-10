@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIR BALANG TRIO RAMADOWN</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+color:white;
+background:#0b0b0b;
+overflow-x:hidden;
+}
+
+/* moving ramadhan gradient background */
+
+body::before{
+content:"";
+position:fixed;
+width:200%;
+height:200%;
+background:linear-gradient(45deg,#0f2027,#203a43,#2c5364,#0f2027);
+animation:movebg 20s linear infinite;
+z-index:-1;
+}
+
+@keyframes movebg{
+0%{transform:translate(0,0);}
+50%{transform:translate(-25%,-25%);}
+100%{transform:translate(0,0);}
+}
+
+/* header */
+
+header{
+text-align:center;
+padding:50px 20px;
+}
+
+header h1{
+font-size:40px;
+color:#ffd700;
+text-shadow:0 0 10px #ffd700;
+}
+
+header p{
+color:#90ee90;
+}
+
+/* menu */
+
+.menu{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:rgba(0,0,0,0.7);
+border:2px solid #ffd700;
+padding:20px;
+width:200px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px gold;
+}
+
+.card h3{
+margin:0;
+color:#90ee90;
+}
+
+.price{
+font-size:22px;
+margin-top:10px;
+color:#ffd700;
+}
+
+/* whatsapp button */
+
+.order{
+text-align:center;
+margin:40px;
+}
+
+.btn{
+background:#25D366;
+padding:15px 30px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-size:20px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1ebc57;
+transform:scale(1.1);
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:20px;
+color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🌙 AIR BALANG TRIO RAMADOWN 🌙</h1>
+
+<p>Ramadhan Special Drinks • Terengganu Style</p>
+
+</header>
+
+<section class="menu">
+
+<div class="card">
+<h3>🥤 Air Tebu</h3>
+<div class="price">RM4</div>
+</div>
+
+<div class="card">
+<h3>🌸 Air Bandung</h3>
+<div class="price">RM3</div>
+</div>
+
+<div class="card">
+<h3>🌽 Air Jagung</h3>
+<div class="price">RM3</div>
+</div>
+
+</section>
+
+<div class="order">
+
+<a class="btn" href="https://wa.me/601131402035">
+Order on WhatsApp
+</a>
+
+</div>
+
+<footer>
+
+<p>📍 Kampong Baharu Balakong</p>
+<p>Selamat Berbuka Puasa 🌙</p>
+
+</footer>
+
+</body>
+</html>
