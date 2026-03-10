@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,7 +18,7 @@ color:white;
 overflow-x:hidden;
 }
 
-/* stars background */
+/* star background */
 
 .stars{
 position:fixed;
@@ -116,6 +117,7 @@ padding:50px 20px;
 .gallery h2{
 color:gold;
 font-size:30px;
+margin-bottom:25px;
 }
 
 .slider{
@@ -130,7 +132,7 @@ border:2px solid gold;
 .slides{
 display:flex;
 width:400%;
-animation:slide 16s infinite;
+animation:slide 32s infinite;
 }
 
 .slides img{
@@ -139,19 +141,27 @@ height:400px;
 object-fit:cover;
 }
 
+/* pause when hover */
+
+.slider:hover .slides{
+animation-play-state:paused;
+}
+
 @keyframes slide{
 
 0%{transform:translateX(0);}
-25%{transform:translateX(0);}
+20%{transform:translateX(0);}
 
-30%{transform:translateX(-100%);}
-50%{transform:translateX(-100%);}
+25%{transform:translateX(-100%);}
+45%{transform:translateX(-100%);}
 
-55%{transform:translateX(-200%);}
-75%{transform:translateX(-200%);}
+50%{transform:translateX(-200%);}
+70%{transform:translateX(-200%);}
 
-80%{transform:translateX(-300%);}
-100%{transform:translateX(-300%);}
+75%{transform:translateX(-300%);}
+95%{transform:translateX(-300%);}
+
+100%{transform:translateX(0);}
 
 }
 
@@ -185,6 +195,7 @@ color:#aaa;
 }
 
 </style>
+
 </head>
 
 
@@ -257,7 +268,7 @@ Order on WhatsApp
 
 <footer>
 
-<p>📍 Kampong Baharu Balakong</p>
+<p>📍 Depan Izzama Coconut Shake</p>
 <p>Selamat Berbuka Puasa 🌙</p>
 
 </footer>
